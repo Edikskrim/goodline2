@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>...</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/phaser.min.js" type="text/javascript"></script>
- 	<script src="js/game.js" type="text/javascript"></script>
- 	<script src="js/gameButtonPlay.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/phaser.min.js" type="text/javascript"></script>
+ 	<script src="../js/game.js" type="text/javascript"></script>
+ 	<script src="../js/gameButtonPlay.js" type="text/javascript"></script>
 </head>
 <body>
     <div class ="header">
     	<div class="mid">
     		<header>
-    			<img src="img/panal.png">
+    			<img class="logo" src="../img/panal.png">
     		</header>
    		</div>
     </div>
@@ -27,7 +27,7 @@
 	    		</b>
 	    		<br>
     		</div>
-			<img src="img/не работает.png">
+			<img src="../img/не работает.png">
 			<div align="center">
 				<br>
 				<b>
@@ -45,7 +45,7 @@
 			
 			<div id="infoi">
 				<div id="gameButton"> 
-					<input type="button" value="Играть" id="playGame" onmousedown="viewDiv(),restart()">
+					<input type="button" value="Играть" id="playGame" onmousedown="viewDiv(),startGame()">
 		
 			</div>
 
