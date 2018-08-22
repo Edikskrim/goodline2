@@ -1,109 +1,85 @@
-body{
+body {
     background: #efefef;
     margin: 0;
     padding: 0;
     font: 20px Arial, Tahoma, sans-serif;
 }
 
-canvas{
+canvas {
     margin: 0 auto;
     padding: 0;
 
 }
 
-header{
-	padding-top: 12px;
+header {
+    padding-top: 12px;
 }
 
-header .logo	{
-	border-radius: 4px 4px 0 4px;
+header .logo {
+    border-radius: 4px 4px 0 4px;
 }
 
-
-#gameButton{
-	width: 800px;
-	height: 600px;
-	margin: 0 auto;
-	text-align:center;
-	position: absolute;
+#gameButton {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
 }
-
-/*#gameButton input{*/
-	/*background-color: #54a208;*/
-	/*width: 200px;*/
-	/*height: 50px;*/
-	/*border-radius: 10px;*/
-	/*font-size: 25pt;*/
-	/*color: #ffffff;*/
-	/*margin-top: 250px;*/
-/*}*/
-
 
 #gameButton input {
-	margin-top: 250px;
-	margin-bottom: 10px;
-	background-color: #72bf44;
-	width: 120px;
-	height: 30px;
-	border-radius: 4px;
-	text-align: center;
-	line-height: 30px;
-	cursor: pointer;
-	font-family: 'Roboto Condensed';
-	font-weight: 400;
-	font-size: 14px;
-	color: white;
-	text-transform: uppercase;
-	cursor: pointer;
-
+    margin-top: 250px;
+    margin-bottom: 10px;
+    background-color: #72bf44;
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
 }
 
-#phaser-demo{
-	    display: block;
+#phaser-demo {
+    display: block;
 }
 
-.mid{
-	width: 960px;
-	margin: 0 auto;
+.mid {
+    width: 960px;
+    margin: 0 auto;
 }
 
-.mid a{
-	text-align: center;
+.mid a {
+    text-align: center;
 }
 
 #container {
-	width: 800px;
-	height: 600px;
-	position: relative;
-	margin: 0 auto;
-	
-
+    width: 800px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
 }
+
 #phaser-demo {
-	width: 800px;
-	height: 600px;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-
-
-#gameButton{
-
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #infoi {
-	width: 800px;
-	height: 600px;
-	position: absolute;
-	background: rgba(255,255,255, 0.5);
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 10;
 }
 
-#infoi {
-	z-index: 10;
-}
-
-.game{
-	padding-bottom: 12px;
+.game {
+    padding-bottom: 12px;
 }
