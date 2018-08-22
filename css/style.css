@@ -83,3 +83,7 @@ header .logo {
 .game {
     padding-bottom: 12px;
 }
+
+.area{
+    outline: none;
+}
