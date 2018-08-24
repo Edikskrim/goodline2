@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Интернет-провайдер Good Line, услуги интернета и телевидения | goodline.info</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script src="/js/phaser.min.js" type="text/javascript"></script>
-    <script src="/js/game.js" type="text/javascript"></script>
-    <script src="/js/gameButtonPlay.js" type="text/javascript"></script>
-    <script src="/js/availabilityСheck.js" type="text/javascript"></script>
+    <script src="js/phaser.min.js" type="text/javascript"></script>
+    <script src="js/game.js" type="text/javascript"></script>
+    <script src="js/gameButtonPlay.js" type="text/javascript"></script>
+    <script src="js/availabilityСheck.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="header">
     <div class="mid">
         <header>
-            <img class="logo" src="/img/panal.png">
+            <img class="logo" src="img/panal.png">
         </header>
     </div>
 </div>
@@ -28,7 +29,10 @@
             </b>
             <br>
         </div>
-        <img id="img_not_available" src="/img/not_available.png">
+        <div id="images">
+            <img id="not_available" src="img/not_available.png">
+            <img class="blink" id="lampOff" src="img/lampOff.png">
+        </div>
         <map name="map">
             <area shape="rect"
                   alt="ссылка"
@@ -53,7 +57,7 @@
             <div id="phaser-demo"></div>
             <div id="infoi">
                 <div id="gameButton">
-                    <input type="button" value="Играть" id="playGame" onmousedown="viewDiv(),startGame()">
+                    <input type="button" value="Играть" id="playGame" class="pulse" onmousedown="viewDiv(),startGame()">
                 </div>
             </div>
         </div>

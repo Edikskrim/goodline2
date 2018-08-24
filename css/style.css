@@ -2,21 +2,34 @@ body {
     background: #efefef;
     margin: 0;
     padding: 0;
-    font: 20px Arial, Tahoma, sans-serif;
+    font: 20px 'Roboto', Arial, sans-serif;
 }
 
 canvas {
     margin: 0 auto;
     padding: 0;
-
 }
 
 header {
-    padding-top: 12px;
+    padding-top: 20px;
 }
 
 header .logo {
     border-radius: 4px 4px 0 4px;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto-bold.ttf);
+    font-weight: bold;
+    font-style: normal;
 }
 
 #gameButton {
@@ -31,17 +44,49 @@ header .logo {
     margin-top: 250px;
     margin-bottom: 10px;
     background-color: #72bf44;
-    width: 120px;
-    height: 30px;
-    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
     text-align: center;
     line-height: 30px;
     cursor: pointer;
-    font-family: 'Roboto Condensed';
-    font-weight: 400;
-    font-size: 14px;
+    font: 25px 'Roboto';
+    font-weight: bold;
     color: white;
     text-transform: uppercase;
+    outline: none;
+}
+
+#not_available {
+    position: absolute;
+}
+
+#lampOff {
+    display: none;
+    width: 108px;
+    height: 140px;
+    position: absolute;
+    margin-top: 86px;
+    margin-left: 766px;
+}
+
+#images {
+    position: relative;
+    margin: 0 auto;
+    height: 350px;
+}
+
+.blink {
+    animation-name: blink;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    70% {
+        opacity: 0.4;
+    }
 }
 
 #phaser-demo {
@@ -81,9 +126,25 @@ header .logo {
 }
 
 .game {
-    padding-bottom: 12px;
+    padding-bottom: 20px;
 }
 
-.area{
+.area {
     outline: none;
+}
+
+.pulse {
+    justify-content: center;
+    align-items: center;
+    background: #0c5b00;
+    animation: radial-pulse 1s infinite;
+}
+
+@keyframes radial-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(114, 190, 68, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
+    }
 }
